@@ -9,6 +9,6 @@ easysalao:
 eureka:
   client:
     serviceUrl:
-      defaultZone: 'http://${ead.serviceRegistry.username}:${ead.serviceRegistry.password}@localhost:8761/eureka'
+      defaultZone: 'http://${easysalao.serviceRegistry.username}:${easysalao.serviceRegistry.password}@localhost:8761/eureka'
   instance:
     hostname: localhost
