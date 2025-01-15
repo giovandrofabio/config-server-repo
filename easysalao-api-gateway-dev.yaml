@@ -8,9 +8,9 @@ spring:
     gateway:
       routes:
         - id: authuser-service
-          uri: lb://EAD-AUTHUSER-SERVICE
+          uri: lb://EASYSALAO-AUTHUSER-SERVICE
           predicates:
-            - Path=/ead-authuser/**
+            - Path=/easysalao-authuser/**
         - id: course-service
           uri: lb://EAD-COURSE-SERVICE
           predicates:
