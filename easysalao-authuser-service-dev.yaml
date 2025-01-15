@@ -1,24 +1,25 @@
 server:
   port: 8087
   servlet:
-    context-path: '/ead-authuser/'
+    context-path: '/easysalao-authuser/'
 
 spring:
   application:
-    name: ead-authuser-service
+    name: easysalao-authuser-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/ead-authuser-v2
-    username: giovandro
-    password: drogaria
+    url: jdbc:mysql://localhost:3306/easysalao-authuser-v2?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
   jpa:
     hibernate:
       ddl-auto: update
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-      jdbc:
-        lob.non-contextual-creation: true
+    show-sql: true
+    database: MYSQL
     properties:
       hibernate:
         show_sql: true
+        format_sql: true
   output:
     ansi:
       enabled: Always
