@@ -12,9 +12,10 @@ spring:
           predicates:
             - Path=/easysalao-authuser/**
         - id: easysalao-service
-          uri: lb://EASYSALAO-SERVICE
+         # uri: lb://EASYSALAO-SERVICE
+          uri: http://localhost:8762
           predicates:
-            - Path=/easysalao-course/**
+            - Path=/easysalao-service/**
         - id: notification-service
           uri: lb://EAD-NOTIFICATION-SERVICE
           predicates:
