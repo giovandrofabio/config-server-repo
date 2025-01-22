@@ -11,10 +11,10 @@ spring:
           uri: lb://EASYSALAO-AUTHUSER-SERVICE
           predicates:
             - Path=/easysalao-authuser/**
-        - id: course-service
-          uri: lb://EAD-COURSE-SERVICE
+        - id: easysalao-service
+          uri: lb://EASYSALAO-SERVICE
           predicates:
-            - Path=/ead-course/**
+            - Path=/easysalao-course/**
         - id: notification-service
           uri: lb://EAD-NOTIFICATION-SERVICE
           predicates:
