@@ -24,7 +24,10 @@ spring:
     ansi:
       enabled: Always
   rabbitmq:
-    addresses: amqps://spfbumdg:C1jlwi0wvYGPaILFM0RmE6V1MntU9RUO@jaragua.lmq.cloudamqp.com/spfbumdg
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin123
 
 logging:
   level:
@@ -33,30 +36,15 @@ logging:
     org.springframework.web: INFO
     org.hibernate: INFO
 
-ead:
-  api:
-    url:
-      course: 'http://ead-course-service/ead-course'
+eaysalao:
   broker:
     exchange:
-      userEvent: ead.userevent
-      paymentEvent: ead.paymentevent
-    queue:
-     paymentEventQueue:
-        name: ead.paymentevent.ms.authuser
-        
-authuser:
-  refreshscope:
-    name: Giovandro Fabio dos Santos
-    
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - refresh
-          - health
+      userEvent: eaysalao.userevent
 
+easysalao:
+  serviceRegistry:
+    username: serviceregistry
+    password: 'ead123sr'
 
 resilience4j:
   circuitbreaker:
