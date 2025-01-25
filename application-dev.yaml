@@ -1,10 +1,10 @@
 easysalao:
+  configServer:
+    username: configserver
+    password: 'ead123cs'
   serviceRegistry:
     username: serviceregistry
     password: 'ead123sr'
-  auth:
-    jwtSecret: t7w!z%C*F-JaNdRgUkXp2s5v8x/A?D(G+KbPeShVmYq3t6w9z$B&E)H@McQfTjWn
-    jwtExpirationMs: 14400000 # 4h
 
 eureka:
   client:
@@ -14,4 +14,4 @@ eureka:
     hostname: localhost
 
 encrypt:
-  key: p3s6v9y$B?E(H+MbQeThWmZq4t7w!z%C*F)J@NcRfUjXn2r5u8x/A?D(G+KaPdSg    
+  key: p3s6v9y$B?E(H+MbQeThWmZq4t7w!z%C*F)J@NcRfUjXn2r5u8x/A?D(G+KaPdSg
