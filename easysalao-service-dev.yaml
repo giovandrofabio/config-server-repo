@@ -3,14 +3,6 @@ server:
   servlet:
     context-path: '/easysalao-service/'
 spring:
-  config:
-    import: 'configserver:'
-  cloud:
-    config:
-      discovery:
-        serviceId: easysalao-config-server
-      username: configserver
-      password: 'ead123cs'
   application:
     name: eaysalao-service
   datasource:
@@ -74,18 +66,3 @@ resilience4j:
       retryInstance:
         maxRetryAttempts: 3
         waitDuration: 5s
-
-easysalao:
-  serviceRegistry:
-    username: serviceregistry
-    password: 'ead123sr'
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: 'http://${easysalao.serviceRegistry.username}:${easysalao.serviceRegistry.password}@localhost:8761/eureka'
-  instance:
-    hostname: localhost
-
-encrypt:
-  key: p3s6v9y$B?E(H+MbQeThWmZq4t7w!z%C*F)J@NcRfUjXn2r5u8x/A?D(G+KaPdSg
