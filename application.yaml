@@ -1,7 +1,4 @@
 easysalao:
-  configServer:
-    username: configserver
-    password: 'ead123cs'
   serviceRegistry:
     username: serviceregistry
     password: 'ead123sr'
@@ -12,6 +9,3 @@ eureka:
       defaultZone: 'http://${easysalao.serviceRegistry.username}:${easysalao.serviceRegistry.password}@localhost:8761/eureka'
   instance:
     hostname: localhost
-
-encrypt:
-  key: p3s6v9y$B?E(H+MbQeThWmZq4t7w!z%C*F)J@NcRfUjXn2r5u8x/A?D(G+KaPdSg

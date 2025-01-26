@@ -1,10 +1,7 @@
 easysalao:
   serviceRegistry:
     username: serviceregistry
-    password: '{cipher}eb42585debf35fe22442b1e124a859310448eec6d760eca5db833351af78cf16'
-  auth:
-    jwtSecret: '{cipher}121c74d2f9ad1c42deef053855d40f8691db9ff01e06f6b5a6cb0c167310938fcc4ca2d46cd1270e59fabf9c2587d7a98c8e45b8cbf4248e1de8fac87dc60d3b6c142c0a48e59e1a11b52896b4e9ddb68ffe93f1d8e872e18636f0c6fa3987d6'
-    jwtExpirationMs: 14400000
+    password: 'ead123sr'
 
 eureka:
   client:
@@ -12,6 +9,3 @@ eureka:
       defaultZone: 'http://${easysalao.serviceRegistry.username}:${easysalao.serviceRegistry.password}@localhost:8761/eureka'
   instance:
     hostname: localhost
-
-encrypt:
-  key: p3s6v9y$B?E(H+MbQeThWmZq4t7w!z%C*F)J@NcRfUjXn2r5u8x/A?D(G+KaPdSg
