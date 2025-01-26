@@ -41,10 +41,17 @@ eaysalao:
     exchange:
       userEvent: eaysalao.userevent
 
-easysalao:
-  serviceRegistry:
-    username: serviceregistry
-    password: 'ead123sr'
+authuser:
+  refreshscope:
+    name: Giovandro Fabio dos Santos
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
 
 resilience4j:
   circuitbreaker:
