@@ -7,10 +7,10 @@ spring:
   application:
     name: easysalao-authuser-service
   datasource:
-    url: jdbc:mysql://localhost:3306/easysalao-authuser-v2?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3314/easysalao-authuser?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
+    password: root
   jpa:
     hibernate:
       ddl-auto: update
